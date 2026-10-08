@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+
+# Large generated datasets
+*.csv
+
+# Research PDF
+*.pdf
