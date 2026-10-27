@@ -13,5 +13,30 @@ frontend/dist/
 !.env.example
 
 # Logs
+logs/
 *.log
 npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea
+.DS_Store
+
+# Local files
+*.local
+
+# Large generated datasets
+*.csv
+
+# Research PDF
+*.pdf
