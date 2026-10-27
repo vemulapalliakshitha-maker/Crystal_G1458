@@ -1,0 +1,464 @@
+.voltage-page {
+  min-height: 100vh;
+  padding: 0 7%;
+  color: #eef7f5;
+  background:
+    radial-gradient(
+      circle at 85% 10%,
+      rgba(26, 112, 102, 0.15),
+      transparent 30%
+    ),
+    #071114;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.voltage-page * {
+  box-sizing: border-box;
+}
+
+.voltage-header {
+  min-height: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  border-bottom: 1px solid rgba(116, 166, 164, 0.16);
+}
+
+.voltage-back-button {
+  border: 1px solid #294447;
+  background: rgba(15, 31, 34, 0.8);
+  color: #b8d0cd;
+  border-radius: 8px;
+  padding: 10px 14px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: 0.2s ease;
+}
+
+.voltage-back-button:hover {
+  color: #55e3c1;
+  border-color: #43a998;
+}
+
+.voltage-brand {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: #e7f6f2;
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.voltage-brand-icon {
+  color: #48e2bd;
+  font-size: 25px;
+}
+
+.voltage-header-label {
+  color: #77918f;
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+.voltage-hero {
+  max-width: 780px;
+  padding: 55px 0 35px;
+}
+
+.voltage-eyebrow,
+.voltage-step {
+  color: #48dfbd;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.voltage-hero h1 {
+  margin: 14px 0;
+  font-size: clamp(35px, 5vw, 54px);
+  line-height: 1.1;
+  letter-spacing: -1.5px;
+}
+
+.voltage-hero h1 span {
+  color: #48dfbd;
+}
+
+.voltage-hero > p:last-child {
+  max-width: 620px;
+  color: #9bb0af;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.voltage-input-card,
+.voltage-results {
+  margin-bottom: 28px;
+  padding: 30px;
+  border: 1px solid #203a3e;
+  border-radius: 17px;
+  background: linear-gradient(
+    135deg,
+    rgba(15, 31, 35, 0.96),
+    rgba(9, 21, 25, 0.96)
+  );
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.12);
+}
+
+.voltage-section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 28px;
+}
+
+.voltage-section-heading h2 {
+  margin: 10px 0 8px;
+  font-size: 25px;
+  font-weight: 650;
+}
+
+.voltage-section-heading p {
+  margin: 0;
+  color: #8fa8a7;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.voltage-card-symbol {
+  color: #4ad9ba;
+  font-size: 32px;
+}
+
+.voltage-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px 22px;
+}
+
+.voltage-field {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.voltage-field label {
+  margin-bottom: 10px;
+  color: #d8e6e3;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.voltage-field input,
+.voltage-field select {
+  width: 100%;
+  min-height: 47px;
+  padding: 12px 14px;
+  border: 1px solid #294449;
+  border-radius: 8px;
+  outline: none;
+  background: #0a191d;
+  color: #e8f5f1;
+  font-family: inherit;
+  font-size: 14px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.voltage-field input::placeholder {
+  color: #607977;
+}
+
+.voltage-field input:focus,
+.voltage-field select:focus {
+  border-color: #45d6b7;
+  box-shadow: 0 0 0 3px rgba(69, 214, 183, 0.1);
+}
+
+.voltage-field select option {
+  background: #0a191d;
+  color: #e8f5f1;
+}
+
+.voltage-field small {
+  margin-top: 8px;
+  color: #78918f;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.voltage-error {
+  margin-top: 22px;
+  padding: 13px 15px;
+  border: 1px solid rgba(255, 111, 111, 0.35);
+  border-radius: 8px;
+  background: rgba(130, 35, 35, 0.14);
+  color: #ffaaaa;
+  font-size: 13px;
+}
+
+.voltage-form-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.voltage-predict-button,
+.voltage-clear-button {
+  min-height: 46px;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 700;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.voltage-predict-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  border: 1px solid #43d8b7;
+  background: #43d8b7;
+  color: #06211d;
+}
+
+.voltage-predict-button span {
+  font-size: 19px;
+}
+
+.voltage-predict-button:hover {
+  transform: translateY(-2px);
+  background: #67edcf;
+}
+
+.voltage-clear-button {
+  border: 1px solid #345054;
+  background: transparent;
+  color: #b4c8c5;
+}
+
+.voltage-clear-button:hover {
+  background: #142a2e;
+}
+
+.voltage-results {
+  animation: voltageFadeIn 0.35s ease;
+}
+
+.voltage-result-badge {
+  padding: 8px 11px;
+  border: 1px solid rgba(255, 191, 105, 0.35);
+  border-radius: 20px;
+  background: rgba(255, 191, 105, 0.08);
+  color: #ffcb87;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+
+.voltage-demo-notice {
+  margin-bottom: 24px;
+  padding: 14px 16px;
+  border: 1px solid rgba(255, 191, 105, 0.3);
+  border-radius: 9px;
+  background: rgba(255, 191, 105, 0.06);
+  color: #e6c99f;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.voltage-demo-notice strong {
+  color: #ffd08f;
+}
+
+.voltage-material-summary {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.voltage-material-summary > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 0;
+  padding: 17px 15px;
+  border: 1px solid #233f43;
+  border-radius: 10px;
+  background: #0b1b1f;
+}
+
+.voltage-material-summary span {
+  color: #7f9b98;
+  font-size: 9px;
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
+
+.voltage-material-summary strong {
+  overflow-wrap: anywhere;
+  color: #4de0bd;
+  font-size: 17px;
+}
+
+.voltage-chart-card {
+  padding: 22px;
+  border: 1px solid #203b40;
+  border-radius: 12px;
+  background: rgba(5, 16, 19, 0.65);
+}
+
+.voltage-chart-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 18px;
+}
+
+.voltage-chart-heading h3 {
+  margin: 0 0 7px;
+  font-size: 16px;
+}
+
+.voltage-chart-heading p {
+  margin: 0;
+  color: #809a98;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.voltage-chart-unit {
+  color: #4de0bd;
+  font-size: 10px;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+
+.voltage-chart {
+  width: 100%;
+  height: 340px;
+}
+
+.voltage-result-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-top: 20px;
+  color: #8da6a3;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.voltage-result-note > span {
+  color: #4de0bd;
+  font-size: 17px;
+}
+
+.voltage-result-note p {
+  margin: 0;
+}
+
+.voltage-footer {
+  padding: 25px 0 35px;
+  color: #5e7775;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  text-align: center;
+}
+
+@keyframes voltageFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 900px) {
+  .voltage-page {
+    padding: 0 4%;
+  }
+
+  .voltage-material-summary {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .voltage-header {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 14px 0;
+  }
+
+  .voltage-header-label {
+    display: none;
+  }
+
+  .voltage-brand {
+    font-size: 16px;
+  }
+
+  .voltage-hero {
+    padding: 40px 0 25px;
+  }
+
+  .voltage-input-card,
+  .voltage-results {
+    padding: 20px 16px;
+    border-radius: 12px;
+  }
+
+  .voltage-section-heading h2 {
+    font-size: 21px;
+  }
+
+  .voltage-form-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .voltage-form-actions {
+    flex-direction: column;
+  }
+
+  .voltage-predict-button,
+  .voltage-clear-button {
+    width: 100%;
+  }
+
+  .voltage-material-summary {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .voltage-chart-card {
+    padding: 15px 8px;
+  }
+
+  .voltage-chart-heading {
+    padding: 0 8px;
+    flex-direction: column;
+  }
+
+  .voltage-chart {
+    height: 300px;
+  }
+}
+
+@media (max-width: 380px) {
+  .voltage-material-summary {
+    grid-template-columns: 1fr;
+  }
+}

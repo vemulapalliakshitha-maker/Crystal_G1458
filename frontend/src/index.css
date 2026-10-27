@@ -1,0 +1,24 @@
+/* Fonts: Sora (headings) + DM Sans (body). Must stay at the top of the file. */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Sora:wght@600;700&display=swap');
+
+/* Minimal reset - replaces the default Vite starter styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #060d0b;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
